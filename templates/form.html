@@ -1,0 +1,32 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/form.css' %}">
+  </head>
+  <body>
+    <form action="{% url 'check_mxik' %}" id="contact_form_submit" class="form-container" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="form-group textarea">
+                <p>Bla bla</p>
+                  <p>
+                  <label for="formFileLg" class="form-label">Iltimos excel fileni joylashtiring</label>
+                  {% comment %} <input class="form-control form-control-lg" id="formFileLg" type="file" /> {% endcomment %}
+                  {{ form.as_p }}
+              </div>
+
+              <button class="submit-btn-02" type="submit" style="margin-top: 10px;">Submit</button>
+              {% if output %}
+              <p>
+              <label for="formFileLg" class="form-label">
+                  <a href="/{{output.mxik_output}}" id="output-link">Output</a>
+              </label>
+              {% endif %}
+          </div>
+      </div>
+  </form>
+  </body>
+</html>

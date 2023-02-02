@@ -1,0 +1,239 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="google-site-verification" content="U-n_fqJloUYan55K1E46OyZw_BH5m6Xj7lmYphL6YJA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive">
+    <title> {% trans "Автоматизация бизнес процессов нового поколения" %} </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- icofont -->
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.css' %}">
+    
+    {% comment %} <link rel="stylesheet" href="{% static 'assets/css/fontawesome.5.7.2.css' %}"> {% endcomment %}
+    <!-- flaticon -->
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- responsive -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+<!-- navbar area start -->
+<nav class="navbar navbar-area navbar-expand-lg nav-absolute white nav-style-01 header-style-09">
+    <div class="container nav-container">
+        <div class="responsive-mobile-menu">
+            <div class="logo-wrapper">
+                <a href="{% url 'home' %}" class="logo">
+                    <img src="{% static 'assets/img/logo-white.png' %}" width="100px" alt="logo" style="margin-top: 10px;">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#appside_main_menu" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="appside_main_menu">
+            <ul class="navbar-nav">
+                <li class="current-menu-item">
+                    <a href="#">{% trans "Домашняя страница" %}</a>
+                </li>
+                <li><a href="#contact">{% trans "О нас" %}</a></li>
+                <li><a href="#pricing">{% trans "Цены" %}</a></li>
+                <li><a href="#amazing-feature-area">{% trans "Возможности" %}</a></li>
+         
+                <li><a href="#footer">{% trans "Контакт" %}</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- navbar area end -->
+
+
+<!-- breadcrumb area start -->
+<div class="breadcrumb-area breadcrumb-bg extra">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-inner">
+                    <h1 class="page-title">Blog</h1>
+                    <ul class="page-navigation">
+                        <li><a href="#"> Home</a></li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb area end -->
+
+<div class="page-content-area padding-top-120 padding-bottom-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <form action="{% url 'check_mxik' %}" id="contact_form_submit" class="contact-form sec-margin" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group textarea">
+                                    xabar - {{ message }}
+                                    <p>
+                                    <label for="formFileLg" class="form-label">Iltimos excel fileni joylashtiring</label>
+                                    {% comment %} <input class="form-control form-control-lg" id="formFileLg" type="file" /> {% endcomment %}
+                                    {{ form.as_p }}
+                                </div>
+
+                                <button class="submit-btn-02" type="submit" style="margin-top: 10px;">{% trans "Напишите нам" %}</button>
+                                {% if output %}
+                                <p>
+                                <label for="formFileLg" class="form-label">
+                                    <a href="/{{output.mxik_output}}">Output</a>
+                                </label>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- footer area start -->
+<footer class="footer-area style-02 bg-blue" id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row" style="
+            justify-content: center;">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget about_widget">
+                        <a href="{% url 'home' %}" class="footer-logo"><img class="footer-logo__ours" src="{% static 'assets/img/logo-white.png' %}" alt=""></a>
+                        <p>{% trans 'ООО "SMART ONE TECHNOLOGIES' %}</p>
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget nav_menus_widget">
+                        {% comment %} <h4 class="widget-title">Useful Links</h4> {% endcomment %}
+                        <ul style="padding-top: 90px;">
+                            <li><a href="#"> {% trans "ИНН 306733959" %}</a></li>
+                            <li><a href="#">{% trans "г.Ташкент, Мирабадский р. ул. Афросиёб 16" %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget nav_menus_widget">
+                        {% comment %} <h4 class="widget-title">Contacts</h4> {% endcomment %}
+                        <ul style="padding-top: 90px;">
+                            <li><a href="#"> +998953630505</a></li>
+                            <li><a href="#"> info@smarttechno.uz</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 1. ООО "SMART ONE TECHNOLOGIES"
+                    2. ИНН
+                    306733959
+                    3. г.Ташкент, Мирабадский р. ул. Афросиёб 16
+                    4. +998953630505
+                    5. info@smarttechno.uz -->
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area"><!-- copyright area -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-inner"><!-- copyright inner wrapper -->
+                        <div class="left-content-area"><!-- left content area -->
+                            &copy; {% trans '2019 ООО "SMART ONE TECHNOLOGIES" Все права защищены.' %}
+                        </div><!-- //. left content aera -->
+                        <div class="right-content-area"><!-- right content area -->
+                            <strong>smarttechno.uz</strong>
+                        </div><!-- //. right content area -->
+                    </div><!-- //.copyright inner wrapper -->
+                </div>
+            </div>
+        </div>
+    </div><!-- //. copyright area -->
+</footer>
+<!-- footer area end -->
+
+<!-- preloader area start -->
+<div class="preloader-wrapper" id="preloader">
+    <div class="preloader" >
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+</div>
+
+  <!-- preloader area end -->
+
+  <!-- back to top area start -->
+  <div class="back-to-top">
+        <i class="fas fa-angle-up"></i>
+  </div>
+  <!-- back to top area end -->
+
+    <!-- jquery -->
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+    <!-- popper -->
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <!-- bootstrap -->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- owl carousel -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <!-- magnific popup -->
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+    <!-- contact js-->
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <!-- wow js-->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <!-- way points js-->
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <!-- counterup js-->
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <!-- main -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>

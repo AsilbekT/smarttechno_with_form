@@ -1,0 +1,295 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="google-site-verification" content="U-n_fqJloUYan55K1E46OyZw_BH5m6Xj7lmYphL6YJA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive">
+    <title> Appside | App Landing pages HTML Templates </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- icofont -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.5.7.2.css' %}">
+    <!-- flaticon -->
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- responsive -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-area navbar-expand-lg nav-absolute white nav-style-01">
+        <div class="container nav-container">
+            <div class="responsive-mobile-menu">
+                <div class="logo-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="{% static 'assets/img/logo-white.png' %}" alt="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#appside_main_menu" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="appside_main_menu">
+                <ul class="navbar-nav">
+                    <li class="current-menu-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog 01</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right-content">
+                <ul>
+                    <li class="button-wrapper">
+                        <a href="#" class="boxed-btn btn-rounded">Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</nav>
+
+<!-- breadcrumb area start -->
+<div class="breadcrumb-area breadcrumb-bg extra">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-inner">
+                    <h1 class="page-title">Blog Details</h1>
+                    <ul class="page-navigation">
+                        <li><a href="#"> Home</a></li>
+                        <li>Blog Details</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb area end -->
+
+<div class="page-content-area padding-top-120 padding-bottom-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                    <div class="single-post-details-item"><!-- blog single content -->
+                        <div class="thumb">
+                            <img src="/{{ blog.image }}" alt="blog image">
+                        </div>
+                        <div class="entry-content">
+                            <ul class="post-meta">
+                                <li><a href="#"><i class="far fa-calendar-alt"></i> {{ blog.date_created }}</a></li>
+                            </ul>
+                            {{ blog.text|safe }}    
+                        </div>
+                    </div> 
+            </div>
+            <div class="col-lg-4">
+                    <div class="sidebar widget-area"><!-- widget area -->
+
+                        <div class="widget widget_search"><!-- widget  -->
+                            <h4 class="widget-title">Search</h4>
+                            <form class="search-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search" id="myInput" onkeyup="myFunction()">
+                                </div>
+                                {% comment %} <button class="submit-btn" type="submit"><i class="fas fa-search"></i></button> {% endcomment %}
+                            </form>
+                        </div><!-- //. widget -->
+    
+
+                        <div class="widget widget_popular_posts"><!-- widget  -->
+                            <h4 class="widget-title">Popular Posts</h4>
+                            <ul id="myUL">
+                                {% for blog in blogs %}
+                                    <li class="single-popular-post-item"><!-- single popular post item -->
+                                        <div class="thumb">
+                                            <img src="/{{ blog.image }}" alt="popular post image" width="80" heigth="70">
+                                        </div>
+                                        <div class="content">
+                                            <span class="time">{{ blog.date_created }}</span>
+                                            <h4 class="title"><a href="{% url 'blog_details' id=blog.id %}">{{ blog.title }}</a></h4>
+                                        </div>
+                                    </li><!-- //. single popular post item -->
+                                    <hr>
+                                {% endfor %}
+                            </ul>
+                        </div>
+    
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer area start -->
+<footer class="footer-area">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget about_widget">
+                        <a href="index.html" class="footer-logo"><img src="{% static '' %}assets/img/logo-white.png" alt=""></a>
+                        <p>Within coming figure sex things are. Pretended concluded did repulsive education smallness yet yet described. Had country man his pressed shewing. </p>
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget nav_menus_widget">
+                        <h4 class="widget-title">Useful Links</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Service</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget nav_menus_widget">
+                        <h4 class="widget-title">Need Help?</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Faqs</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Policy</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Support</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Temrs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget nav_menus_widget">
+                        <h4 class="widget-title">Download</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> For IOS</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> For Android</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> For Mac</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> For Window</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> For Linax</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area"><!-- copyright area -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-inner"><!-- copyright inner wrapper -->
+                        <div class="left-content-area"><!-- left content area -->
+                            &copy; Copyrights 2019 Appside All rights reserved.
+                        </div><!-- //. left content aera -->
+                        <div class="right-content-area"><!-- right content area -->
+                            Designed by <strong>Love</strong>
+                        </div><!-- //. right content area -->
+                    </div><!-- //.copyright inner wrapper -->
+                </div>
+            </div>
+        </div>
+    </div><!-- //. copyright area -->
+</footer>
+<!-- footer area end -->
+
+<!-- preloader area start -->
+<div class="preloader-wrapper" id="preloader">
+    <div class="preloader" >
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+</div>
+
+  <!-- preloader area end -->
+
+  <!-- back to top area start -->
+  <div class="back-to-top">
+        <i class="fas fa-angle-up"></i>
+  </div>
+  <!-- back to top area end -->
+
+    <!-- jquery -->
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+    <!-- popper -->
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <!-- bootstrap -->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- owl carousel -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <!-- magnific popup -->
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+    <!-- contact js-->
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <!-- wow js-->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <!-- way points js-->
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <!-- counterup js-->
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <!-- main -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+</body>
+
+</html>

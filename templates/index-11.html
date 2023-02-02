@@ -1,0 +1,617 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="google-site-verification" content="U-n_fqJloUYan55K1E46OyZw_BH5m6Xj7lmYphL6YJA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive">
+    <title> {% trans "Автоматизация бизнес процессов нового поколения" %} </title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- icofont -->
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.css' %}">
+    
+    {% comment %} <link rel="stylesheet" href="{% static 'assets/css/fontawesome.5.7.2.css' %}"> {% endcomment %}
+    <!-- flaticon -->
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- responsive -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+<!-- navbar area start -->
+    <nav class="navbar navbar-area navbar-expand-lg nav-absolute white nav-style-01 header-style-09">
+        <div class="container nav-container">
+            <div class="responsive-mobile-menu">
+                <div class="logo-wrapper">
+                    <a href="{% url 'home' %}" class="logo">
+                        <img src="{% static 'assets/img/logo-white.png' %}" width="100px" alt="logo" style="margin-top: 10px;">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#appside_main_menu" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="appside_main_menu">
+                <ul class="navbar-nav">
+                    <li class="current-menu-item">
+                        <a href="#">{% trans "Домашняя страница" %}</a>
+                    </li>
+                    <li><a href="#contact">{% trans "О нас" %}</a></li>
+                    <li><a href="#pricing">{% trans "Цены" %}</a></li>
+                    <li><a href="#amazing-feature-area">{% trans "Возможности" %}</a></li>
+             
+                    <li><a href="#footer">{% trans "Контакт" %}</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- navbar area end -->
+
+    <!-- header area start  -->
+    <header class="header-area header-bg-11 style-11" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <div class="header-inner">
+                        <h1 class="title wow fadeInDown">{% trans "Автоматизируйте бизнес за 19 минут с помощью ПО SMARTONE" %}</h1>
+                        <p style="padding-bottom:20px;">{% trans "SMARTONE ERP -Простое ведение номенклатуры, добавление ТМЦ Полный контроль в реестре смен и чеков Кассовая аналитика за любой период Программы лояльности, скидки и бонусы клиентам Удаленный контроль всех подразделений" %}</p>
+                        <p>{% trans "MOBILE POS - мгновенная регистрация фискальных чеков на сервере OFD Простой эргономичный интерфейс Отправка покупателям e-чека Быстро и удобно" %}</p>
+                        <div class="btn-wrapper wow fadeInUp">
+                            <a href="https://uz.smartoneclub.com/register/" class="boxed-btn-02 reverse-color" target="_blank">{% trans "Попробовать бесплатно" %}</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="right-img">
+                        <div class="img-wrapper">
+                            <img src="{% static 'assets/img/header-right-image.png' %}" alt="header right image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header area end  -->
+
+
+<!-- connect area start  -->
+<section class="connect-area padding-top-110 padding-bottom-85" id="about">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-12">
+                <div class="right-content-area">
+                    <h2 class="title" style="text-align: center; margin-bottom: 24px;">{% trans "Кому выгодно?" %}</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="row">
+            
+                    <div class="col-lg-6">
+                        <div class="single-connect-you-item margin-bottom-30 theme-01">
+                            <div class="icon">
+                                <i class="fas fa-cash-register"></i>
+                            </div>
+                            <div class="content">
+                                <h4 class="title">{% trans "Розничная торговля" %}</h4>
+                                <p>{% trans "Полное решение для одного магазина или сети торговых точек: кассовая программа, учет товаров, выдача онлайн-заказов" %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-connect-you-item margin-bottom-30 theme-01">
+                            <div class="icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="content">
+                                <h4 class="title">{% trans "Кафе и Рестораны" %}</h4>
+                                <p>{% trans "Программное обеспечения Smartone адаптируется под потребности вашего бизнеса и одинаково хорош как для небольшой кофеточки, так и для сети заведений." %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-connect-you-item margin-bottom-30 theme-01">
+                            <div class="icon">
+                                <i class="fas fa-hand-holding-box"></i>
+                            </div>
+                            <div class="content">
+                                <h4 class="title">{% trans "Маркетплейс" %}</h4>
+                                <p>{% trans "Выполняйте заказы точно и в срок! Из интернет-магазина передаются заказы, обратно — товары и их наличие. Поддерживаются модификации товаров. Обработка заказов нескольких интернет-магазинов в единой системе." %} </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-connect-you-item margin-bottom-30 theme-01">
+                            <div class="icon">
+                                <i class="fas fa-car-wash"></i>
+                            </div>
+                            <div class="content">
+                                <h4 class="title">{% trans "Сфера услуг" %}</h4>
+                                <p>{% trans "Автоматизация салона красоты. Автоматизация других предприятий сферы услуг (прокат, автосервис, фитнес-клуб)" %} </p>
+                            </div>
+                        </div>
+                    </div>
+              
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- connect area end -->
+
+<!-- customer reply and amazing feature area start  -->
+<section class="customer-reply-area padding-top-120">
+    <div class="right-image">
+        <img src="assets/img/mobile-side-image.png" alt=""/>
+    </div>
+    <div class="amazing-feature-area padding-top-55 padding-bottom-80" id="amazing-feature-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-title"><!-- section title -->
+                        {% comment %} <span class="subtitle">АДМИН-ПАНЕЛЬ</span> {% endcomment %}
+                        <h3 class="title extra">{% trans "Больше, чем просто учёт" %}</h3>
+                        <p>{% trans "Прогнозируйте нагрузку, оптимизируйте справочники и склад, привлекайте новых клиентов, контролируйте сотрудников. Весь бэк-офис прямо у вас в браузере." %}</p>
+                    </div><!-- / /. section title -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-01 margin-bottom-30">
+                        <div class="icon">
+                            <i class="fas fa-abacus"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">{% trans "Товароучетная система" %}</h4>
+                            <p>{% trans "Управление товарами и ценами. Планирование закупок и контроль остатков. Резервы. Модификации. Инвентаризации." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-02 margin-bottom-30">
+                        <div class="icon">
+                            <i class="fab fa-edge-legacy"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">{% trans "Маркетплейсы" %}</h4>
+                            <p>{% trans "Создание сайта за несколько кликов. Создание «Showroom» и интернет магазина с возможностью приема платежей. Подключение, создание и ведение корпоративных аккаунтов в социальных сетях." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-03 margin-bottom-30">
+                        <div class="icon">
+                            <i class="fad fa-scanner-keyboard"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">
+                                {% trans "Мобильный кассир" %}
+                                </h4>
+                            <p>{% trans "С функцией 'Мобильный кассир' достаточно приобрести всего одну кассу и сделать смартфоны сотрудников «Виртуальными кассами». Теперь они могут принимать оплату любыми способами и выдавать чек по электронной почте, QR-коду или в SMS-сообщении, с учетом законодательства!" %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-04 margin-bottom-30">
+                        <div class="icon">
+                            <i class="far fa-headset"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">{% trans "CRM для торговли" %}</h4>
+                            <p>{% trans "Автоматический охват посетителей вашего сайта и преобразование их в потенциальных клиентов в программном обеспечении CRM SmartOne. Комплекс автоматически предлагает дорожную карту действий которые нужно предпринять для быстрой конвертации потенциальных клиентов в покупателей." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-04 margin-bottom-30">
+                        <div class="icon">
+                            <i class="fas fa-credit-card-front"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">
+                                {% trans "Интеграция с платёжными системами" %}
+                                </h4>
+                            <p>{% trans "На данный момент наша ПО интегрировано с платёжной системой HUMO. Также сделано интеграция с электронными платёжными системами PAYME, CLICK. Интеграция с платёжной системы UZCARD на завершающей стадии." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-amazing-feature-01 theme-04 margin-bottom-30">
+                        <div class="icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">{% trans "Интеграция" %}</h4>
+                            <p>{% trans "Программное обеспечения SMART ONE Интегрировано с устройствами: Онлайн ККМ UZ SMART BANK P1000, UZ SMART BANK P2000L, SMARTONE BANK PRO, Любой мобильный телефон или планшет на платформе ANDROID 5+" %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- customer reply and amazing feature area end -->
+
+
+<!-- full width feature 04 area end -->
+<div class="video-play-area margin-minus">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="video-play-width-image">
+                    <img src="https://i.ytimg.com/vi_webp/sujSmZczepQ/maxresdefault.webp" alt="">
+                    <div class="hover">
+                        <a href="https://www.youtube.com/watch?v=sujSmZczepQ" class="mfp-iframe video-play-btn"><i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- testimonial-two-area start  -->
+ <div class="testimonial-area-three bg-image padding-bottom-120 mirgin-minus">
+    <div class="container">
+       <div class="row justify-content-center">
+           <div class="col-lg-10">
+               <div class="section-title white"><!-- section title -->
+                   <h3 class="title extra">{% trans "Наши преимущества" %}</p>
+               </div><!-- / /. section title -->
+           </div>
+           <div class="col-lg-12">
+                <div class="row">
+                        <div class="col-lg-4 single-testimonial-item-03" >
+                             <div class="content-area" style="height:400px">
+                                <img src="{% static 'assets/img/feature-1.svg' %}" width="215" height="152" alt="Просто">
+                                 <p>{% trans "Поддержка 24/7" %}</p>
+                                 <div class="author-meta">
+                                    <h4 class="title"><span class="designation">{% trans "В чате, по телефону и почте" %}</span></h4>
+                             </div>
+                             </div>
+                            
+                        </div>
+                        <div class="col-lg-4 single-testimonial-item-03">
+                             <div class="content-area" style="height:400px">
+                                <img src="{% static 'assets/img/feature-2.svg' %}" width="215" height="152" alt="Просто"><p></p>
+                                <p><h4 style="color:white;">{% trans "Доступно" %}</h4></p>
+                                 <div class="author-meta">
+                                        <h4 class="title"><span class="designation">{% trans "На смартфоне, планшете, компьютере и Онлайн ККМ" %}</span></h4>
+                                 </div>
+                             </div>
+                            
+                        </div>
+                        <div class="col-lg-4 single-testimonial-item-03">
+                            <div class="content-area" style="height:400px">
+                                <img src="{% static 'assets/img/feature-3.svg' %}" width="215" height="152" alt="Просто"><p></p>
+                                <p><h4 style="color:white;">{% trans "Просто" %}</h4></p>
+                                 <div class="author-meta">
+                                        <h4 class="title"><span class="designation">{% trans "Старт за 19 минут" %}</span></h4>
+                                 </div>
+                            </div>
+                            
+                       </div>
+                </div>
+           </div>
+       </div>
+    </div>
+   
+</div>
+ <!-- screenshort area start  -->
+<section class="screenshort-area-02 padding-top-110 padding-bottom-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="section-title"><!-- section title -->
+                    <h3 class="title extra">{% trans "Помогает всегда держать руку на пульсе бизнеса" %}</h3>
+                    <p>{% trans "Простое, удобное, информативное приложение для руководителя SMARTY" %}</p>
+                </div><!-- / /. section title -->
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="screeshort-carousel-wrap-02">
+  
+                    <div class="screenshort-carousel-02">
+                        <div class="single-screenshort-item">
+                            <img src="{% static 'assets/img/screenshort/01.jpg' %}" alt="screenhshort image">
+                        </div>
+                        <div class="single-screenshort-item">
+                            <img src="{% static 'assets/img/screenshort/02.jpg' %}" alt="screenhshort image">
+                        </div>
+                        <div class="single-screenshort-item">
+                            <img src="{% static 'assets/img/screenshort/03.jpg' %}" alt="screenhshort image">
+                        </div>
+                        <div class="single-screenshort-item">
+                            <img src="{% static 'assets/img/screenshort/04.jpg' %}" alt="screenhshort image">
+                        </div>
+                    </div>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=org.qtproject.Smarty" class="boxed-btn-02"><i class="fab fa-google-play"></i> Play Store</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- screenshort area end -->
+
+<!-- price plan area start -->
+<section class="pricing-plan-area gray-bg" id="pricing">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="section-title"><!-- section title -->
+                    <h3 class="title extra">{% trans "Тарифные планы" %}</h3>
+                    <p>{% trans "Smartone работает по модели подписки — платите помесячно или сэкономьте при оплате за год. Первые 7 дней бесплатно." %}</p>
+                </div><!-- //. section title -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-price-plan-02 wow zoomIn"><!-- single price plan one -->
+                    <div class="price-header">
+                        <h4 class="name"><b>{% trans "СТАРТ" %}</b></h4>
+                        <div class="price-wrap">
+                            <span class="price"><b>{% trans "60 000 сум" %}</b></span>
+                        </div>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li>{% trans "Кассовое ПО" %}</li>
+                            <li>{% trans "Кассовое Ядро (модуль онлайн ккм)" %}</li>
+                            <li>{% trans "Банковское ПО" %}</li>
+                            <li>{% trans "Техподдержка 24/7" %}</li>
+                        </ul>
+                    </div>
+                    <div class="price-footer">
+                        <a href="https://uz.smartoneclub.com/register/"  class="boxed-btn" target="_blank">{% trans "Попробовать" %}</a>
+                    </div>
+                </div><!-- //. single price plan one -->
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-price-plan-02 wow zoomIn featured"><!-- single price plan one -->
+                    <div class="price-header">
+                        <h4 class="name"><b>{% trans "БИЗНЕС" %}</b></h4>
+                        <div class="price-wrap">
+                            <span class="price"><b>{% trans "100 000 сум" %}</b></span>
+                        </div>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            <li>{% trans "Кассовое ПО" %}</li>
+                            <li>{% trans "Кассовое Ядро (модуль онлайн ккм)" %}</li>
+                            <li>{% trans "Банковское ПО" %}</li>
+                            <li>{% trans "Техподдержка 24/7" %}</li>
+                            <li>{% trans "ERP (Товароучетная система)" %}</li>
+                        </ul>
+                    </div>
+                    <div class="price-footer">
+                        <a href="https://uz.smartoneclub.com/register/"  class="boxed-btn" target="_blank">{% trans "Попробовать" %}</a>
+                    </div>
+                </div><!-- //. single price plan one -->
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-price-plan-02 wow zoomIn"><!-- single price plan one -->
+                    <div class="price-header">
+                        <h4 class="name"><b>{% trans "ПРО" %}</b></h4>
+                        <div class="price-wrap">
+                            <span class="price"><b>{% trans "150 000 сум" %}</b></span>
+                        </div>
+                    </div>
+                    <div class="price-body">
+                        <ul>
+                            
+                            <li>{% trans "Кассовое ПО" %}</li>
+                            <li>{% trans "Кассовое Ядро (модуль онлайн ккм)" %}</li>
+                            <li>{% trans "Банковское ПО" %}</li>
+                            <li>{% trans "Техподдержка 24/7" %}</li>
+                            <li>{% trans "ERP (Товароучетная система)" %}</li>
+                            <li>{% trans "Маркетплейс Программа лояльности" %}</li>
+                        </ul>
+                    </div>
+                    <div class="price-footer">
+                        <a href="https://uz.smartoneclub.com/register/"  class="boxed-btn" target="_blank">{% trans "Попробовать" %}</a>
+                    </div>
+                </div><!-- //. single price plan one -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- price plan area end -->
+        
+
+
+<!-- contact form area start  -->
+<div class="contact-form-area-02 gray-bg contact-bg padding-bottom-120 padding-top-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                    <div class="contact-area-wrapper" id="contact"><!-- contact area wrapper -->
+                        <span class="subtitle">{% trans "Мы делаем систему автоматизации" %}</span>
+                        <h3 class="title">{% trans "О компании Smart One Technologies" %}</h3>
+                        <p> {% trans "Компания Smart One Technologies основана 2019 году. За короткое время компания получила опыт в области разработки программного обеспечения для автоматизации бизнес процессов любых масштабов." %}</p>
+                        <p> {% trans "Мы разработали функционал облачного сервиса, который поможет вам эффективно управлять и масштабировать свой бизнес. С помощью SmartOne ERP вы сможете контролировать финансовые потоки, управлять запасами, регулировать ценообразование и сравнивать эффективность сотрудников. SmartOne ERP ускоряет любой процесс, от управления персоналом до контроля закупок." %}</p>
+                        <p> {% trans "С помощью ПО SmartOne Mobile POS вы получаете необходимый функционал рабочего место кассира. Также имеется возможность настройки нескольких уровней доступа (кассир, старший кассир, администратор). Помимо этого, прямо на кассе можно получить отчеты по всем операциям и базовую аналитику по продажам. Приложение синхронизируется с личным кабинетом облачной системы учета SmartOne ERP." %}</p>
+                        <p> {% trans "Наша миссия — упростить ведение бизнеса для предпринимателей по всей Республики и во всем мире." %}</p>
+                        
+                        <hr>
+                        <a href="/{{ oferta_umumiy.file }}" target="_blank"  class="boxed-btn-02 reverse-color"><i class="fad fa-download"></i>  {% trans "скачать ПУБЛИЧНАЯ ОФЕРТА" %}</a>
+                        <hr>
+                        <p> {% trans "Временная ОФЕРТА для Кашкадарьинской, Cурхандарьинской и Навоийской областей" %}</p>
+                        <a href="/{{ oferta_snq.file }}" target="_blank"  class="boxed-btn-01 reverse-color"><i class="fad fa-download"></i>  {% trans "скачать ПУБЛИЧНАЯ ОФЕРТА" %}</a>
+                        <hr><h4>{% trans "ЕСЛИ ЕСТЬ ВОПРОСЫ? НАПИШИТЕ НАМ" %}</h4>
+                        
+                        
+                        <form action="{% url 'home' %}" id="contact_form_submit" class="contact-form sec-margin" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        {{form.name}}
+                                        {% comment %} <input type="text" class="form-control" id="uname" name="name" placeholder="Your Name"> {% endcomment %}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        {{form.email}}
+                                        {% comment %} <input type="text" class="form-control" id="email" name="email" placeholder="Your Email"> {% endcomment %}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group textarea">
+                                        {{form.text}}
+
+                                        {% comment %} <textarea name="text" id="message" class="form-control" name="text" cols="30" rows="10" placeholder="Message"></textarea> {% endcomment %}
+                                    </div>
+                                    {{form.captcha}}
+
+                                    <button class="submit-btn-02" type="submit" style="margin-top: 10px;">{% trans "Напишите нам" %}</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- //. contact area wrapper -->
+                </div>
+            <div class="col-lg-6">
+                <div class="img-wrapper">
+                    <img src="{% static 'assets/img/contact-mobile.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact form area end -->
+
+<!-- footer area start -->
+<footer class="footer-area style-02 bg-blue" id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row" style="
+            justify-content: center;">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget about_widget">
+                        <a href="{% url 'home' %}" class="footer-logo"><img class="footer-logo__ours" src="{% static 'assets/img/logo-white.png' %}" alt=""></a>
+                        <p>{% trans 'ООО "SMART ONE TECHNOLOGIES' %}</p>
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget nav_menus_widget">
+                        {% comment %} <h4 class="widget-title">Useful Links</h4> {% endcomment %}
+                        <ul style="padding-top: 90px;">
+                            <li><a href="#"> {% trans "ИНН 306733959" %}</a></li>
+                            <li><a href="#">{% trans "г.Ташкент, Мирабадский р. ул. Афросиёб 16" %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget nav_menus_widget">
+                        {% comment %} <h4 class="widget-title">Contacts</h4> {% endcomment %}
+                        <ul style="padding-top: 90px;">
+                            <li><a href="#"> +998953630505</a></li>
+                            <li><a href="#"> info@smarttechno.uz</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 1. ООО "SMART ONE TECHNOLOGIES"
+                    2. ИНН
+                    306733959
+                    3. г.Ташкент, Мирабадский р. ул. Афросиёб 16
+                    4. +998953630505
+                    5. info@smarttechno.uz -->
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area"><!-- copyright area -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-inner"><!-- copyright inner wrapper -->
+                        <div class="left-content-area"><!-- left content area -->
+                            &copy; {% trans '2019 ООО "SMART ONE TECHNOLOGIES" Все права защищены.' %}
+                        </div><!-- //. left content aera -->
+                        <div class="right-content-area"><!-- right content area -->
+                            <strong>smarttechno.uz</strong>
+                        </div><!-- //. right content area -->
+                    </div><!-- //.copyright inner wrapper -->
+                </div>
+            </div>
+        </div>
+    </div><!-- //. copyright area -->
+</footer>
+<!-- footer area end -->
+
+<!-- preloader area start -->
+<div class="preloader-wrapper" id="preloader">
+    <div class="preloader" >
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+</div>
+
+  <!-- preloader area end -->
+
+  <!-- back to top area start -->
+  <div class="back-to-top">
+        <i class="fas fa-angle-up"></i>
+  </div>
+  <!-- back to top area end -->
+
+    <!-- jquery -->
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+    <!-- popper -->
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <!-- bootstrap -->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- owl carousel -->
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <!-- magnific popup -->
+    <script src="{% static 'assets/js/jquery.magnific-popup.js' %}"></script>
+    <!-- contact js-->
+    <script src="{% static 'assets/js/contact.js' %}"></script>
+    <!-- wow js-->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <!-- way points js-->
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <!-- counterup js-->
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <!-- main -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>

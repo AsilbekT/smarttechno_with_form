@@ -1,0 +1,444 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-07 14:09+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app/forms.py:9
+msgid "Ваше имя"
+msgstr "Your name"
+
+#: app/forms.py:10
+msgid "Ваша электронная почта"
+msgstr "Your email address"
+
+#: app/forms.py:12
+msgid "Текст"
+msgstr "Text body"
+
+#: smartone_techno/settings.py:123
+msgid "English"
+msgstr ""
+
+#: smartone_techno/settings.py:124
+msgid "Russian"
+msgstr ""
+
+#: smartone_techno/settings.py:125
+msgid "Uzbek"
+msgstr ""
+
+#: templates/index-11.html:13
+msgid "Автоматизация бизнес процессов нового поколения"
+msgstr "New generation business process automation"
+
+#: templates/index-11.html:57
+msgid "Домашняя страница"
+msgstr "Home"
+
+#: templates/index-11.html:59
+msgid "О нас"
+msgstr "About us"
+
+#: templates/index-11.html:60
+msgid "Цены"
+msgstr "Prices"
+
+#: templates/index-11.html:61
+msgid "Возможности"
+msgstr "Opportunities"
+
+#: templates/index-11.html:63
+msgid "Контакт"
+msgstr "Contact"
+
+#: templates/index-11.html:78
+msgid "Автоматизируйте бизнес за 19 минут с помощью ПО SMARTONE"
+msgstr "Automate your business in 19 minutes with SMARTONE software"
+
+#: templates/index-11.html:79
+msgid ""
+"SMARTONE ERP -Простое ведение номенклатуры, добавление ТМЦ Полный контроль в "
+"реестре смен и чеков Кассовая аналитика за любой период Программы "
+"лояльности, скидки и бонусы клиентам Удаленный контроль всех подразделений"
+msgstr ""
+"SMARTONE ERP - Easy inventory management, adding goods and materials Full "
+"control in Register of shifts and checks Cash analytics for any period of "
+"the Programloyalty, discounts and bonuses to customers Remote control of all "
+"departments"
+
+#: templates/index-11.html:80
+msgid ""
+"MOBILE POS - мгновенная регистрация фискальных чеков на сервере OFD Простой "
+"эргономичный интерфейс Отправка покупателям e-чека Быстро и удобно"
+msgstr ""
+"MOBILE POS - instant registration of fiscal checks on the OFD server Simple "
+"Ergonomic interface Sending an e-check to customers Quickly and conveniently"
+
+#: templates/index-11.html:82
+msgid "Попробовать бесплатно"
+msgstr "Try for free"
+
+#: templates/index-11.html:106
+msgid "Кому выгодно?"
+msgstr "Who benefits?"
+
+#: templates/index-11.html:118
+msgid "Розничная торговля"
+msgstr "Retail"
+
+#: templates/index-11.html:119
+msgid ""
+"Полное решение для одного магазина или сети торговых точек: кассовая "
+"программа, учет товаров, выдача онлайн-заказов"
+msgstr ""
+"A complete solution for a single store or chain of outlets: checkout "
+"program, accounting for goods, issuing online orders"
+
+#: templates/index-11.html:129
+msgid "Кафе и Рестораны"
+msgstr "Cafes and restaurants"
+
+#: templates/index-11.html:130
+msgid ""
+"Программное обеспечения Smartone адаптируется под потребности вашего бизнеса "
+"и одинаково хорош как для небольшой кофеточки, так и для сети заведений."
+msgstr ""
+"Smartone software adapts to your business needsand equally good for a small "
+"coffee shop, and for a chain of establishments."
+
+#: templates/index-11.html:140
+msgid "Маркетплейс"
+msgstr "Marketplace"
+
+#: templates/index-11.html:141
+msgid ""
+"Выполняйте заказы точно и в срок! Из интернет-магазина передаются заказы, "
+"обратно — товары и их наличие. Поддерживаются модификации товаров. Обработка "
+"заказов нескольких интернет-магазинов в единой системе."
+msgstr ""
+"Fulfill orders accurately and on time! Orders are transferred from the "
+"online store, back - products and their availability. Product modifications "
+"are supported. Processing orders of several online stores in a single system."
+
+#: templates/index-11.html:151
+msgid "Сфера услуг"
+msgstr "Service sector"
+
+#: templates/index-11.html:152
+msgid ""
+"Автоматизация салона красоты. Автоматизация других предприятий сферы услуг "
+"(прокат, автосервис, фитнес-клуб)"
+msgstr ""
+"Automation of a beauty salon. Automation of other service "
+"enterprises(rental, car service, fitness club)"
+
+#: templates/index-11.html:176
+msgid "Больше, чем просто учёт"
+msgstr "More than just accounting"
+
+#: templates/index-11.html:177
+msgid ""
+"Прогнозируйте нагрузку, оптимизируйте справочники и склад, привлекайте новых "
+"клиентов, контролируйте сотрудников. Весь бэк-офис прямо у вас в браузере."
+msgstr ""
+"Predict the load, optimize directories and warehouse, attract new "
+"onescustomers, control employees. All back office right in your browser."
+
+#: templates/index-11.html:188
+msgid "Товароучетная система"
+msgstr "Inventory system"
+
+#: templates/index-11.html:189
+msgid ""
+"Управление товарами и ценами. Планирование закупок и контроль остатков. "
+"Резервы. Модификации. Инвентаризации."
+msgstr ""
+"Management of goods and prices. Planning of purchases and control of stocks. "
+"Reserves. Modifications. Inventories."
+
+#: templates/index-11.html:199
+msgid "Маркетплейсы"
+msgstr "Marketplaces"
+
+#: templates/index-11.html:200
+#, fuzzy
+#| msgid ""
+#| "Создание сайта за несколько кликов. Создание 'Showroom' и интернет "
+#| "магазина с возможностью приема платежей. Подключение, создание и ведение "
+#| "корпоративных аккаунтов в социальных сетях."
+msgid ""
+"Создание сайта за несколько кликов. Создание «Showroom» и интернет магазина "
+"с возможностью приема платежей. Подключение, создание и ведение "
+"корпоративных аккаунтов в социальных сетях."
+msgstr ""
+"Creating a website in a few clicks. Creating a 'Showroom' and an online "
+"storewith the ability to accept payments. Connecting, creating and "
+"maintaining corporate social media accounts."
+
+#: templates/index-11.html:211
+msgid "Мобильный кассир"
+msgstr "Mobile cashier"
+
+#: templates/index-11.html:213
+msgid ""
+"С функцией 'Мобильный кассир' достаточно приобрести всего одну кассу и "
+"сделать смартфоны сотрудников «Виртуальными кассами». Теперь они могут "
+"принимать оплату любыми способами и выдавать чек по электронной почте, QR-"
+"коду или в SMS-сообщении, с учетом законодательства!"
+msgstr ""
+"With the 'Mobile Cashier' function, it is enough to purchase only one cash "
+"desk and make employees' smartphones 'Virtual checkouts'. Now they can "
+"accept payment by any means and issue a receipt by e-mail, QR-code or SMS, "
+"subject to the law!"
+
+#: templates/index-11.html:223
+msgid "CRM для торговли"
+msgstr "CRM for trade"
+
+#: templates/index-11.html:224
+msgid ""
+"Автоматический охват посетителей вашего сайта и преобразование их в "
+"потенциальных клиентов в программном обеспечении CRM SmartOne. Комплекс "
+"автоматически предлагает дорожную карту действий которые нужно предпринять "
+"для быстрой конвертации потенциальных клиентов в покупателей."
+msgstr ""
+"Automatically reach your website visitors and convert them to leads in CRM "
+"software SmartOne. Complex automatically suggests a roadmap of actions to "
+"taketo quickly convert potential customers into buyers."
+
+#: templates/index-11.html:235
+msgid "Интеграция с платёжными системами"
+msgstr "Integration with payment systems"
+
+#: templates/index-11.html:237
+msgid ""
+"На данный момент наша ПО интегрировано с платёжной системой HUMO. Также "
+"сделано интеграция с электронными платёжными системами PAYME, CLICK. "
+"Интеграция с платёжной системы UZCARD на завершающей стадии."
+msgstr ""
+"At the moment, our software is integrated with the HUMO payment system. Also "
+"integration with electronic payment systems PAYME, CLICK is done. "
+"Integration with UZCARD payment system at the final stage."
+
+#: templates/index-11.html:247
+msgid "Интеграция"
+msgstr "Integration"
+
+#: templates/index-11.html:248
+msgid ""
+"Программное обеспечения SMART ONE Интегрировано с устройствами: Онлайн ККМ "
+"UZ SMART BANK P1000, UZ SMART BANK P2000L, SMARTONE BANK PRO, Любой "
+"мобильный телефон или планшет на платформе ANDROID 5+"
+msgstr ""
+"SMART ONE software Integrated with devices: Online cash registerUZ SMART "
+"BANK P1000, UZ SMART BANK P2000L, SMARTONE BANK PRO, Anymobile phone or "
+"tablet based on ANDROID 5+"
+
+#: templates/index-11.html:281
+msgid "Наши преимущества"
+msgstr "Our advantages"
+
+#: templates/index-11.html:289
+msgid "Поддержка 24/7"
+msgstr "Support 24/7"
+
+#: templates/index-11.html:291
+msgid "В чате, по телефону и почте"
+msgstr "Chat, phone and mail"
+
+#: templates/index-11.html:299
+msgid "Доступно"
+msgstr "Available"
+
+#: templates/index-11.html:301
+msgid "На смартфоне, планшете, компьютере и Онлайн ККМ"
+msgstr "On a smartphone, tablet, computer and Online cash register"
+
+#: templates/index-11.html:309
+msgid "Просто"
+msgstr "Just"
+
+#: templates/index-11.html:311
+msgid "Старт за 19 минут"
+msgstr "Start in 19 minutes"
+
+#: templates/index-11.html:328
+msgid "Помогает всегда держать руку на пульсе бизнеса"
+msgstr "Helps to always keep abreast of business"
+
+#: templates/index-11.html:329
+msgid "Простое, удобное, информативное приложение для руководителя SMARTY"
+msgstr "A simple, convenient, informative application for the head of SMARTY"
+
+#: templates/index-11.html:365
+msgid "Тарифные планы"
+msgstr "Tariff plans"
+
+#: templates/index-11.html:366
+msgid ""
+"Smartone работает по модели подписки — платите помесячно или сэкономьте при "
+"оплате за год. Первые 7 дней бесплатно."
+msgstr ""
+"Smartone works on a subscription model - pay monthly or save on paid for a "
+"year. The first 7 days are free."
+
+#: templates/index-11.html:374
+msgid "СТАРТ"
+msgstr "START"
+
+#: templates/index-11.html:376
+msgid "60 000 сум"
+msgstr "60 000 UZS"
+
+#: templates/index-11.html:381 templates/index-11.html:402
+#: templates/index-11.html:425
+msgid "Кассовое ПО"
+msgstr "Cash software"
+
+#: templates/index-11.html:382 templates/index-11.html:403
+#: templates/index-11.html:426
+msgid "Кассовое Ядро (модуль онлайн ккм)"
+msgstr "Cash Core (online cash register module)"
+
+#: templates/index-11.html:383 templates/index-11.html:404
+#: templates/index-11.html:427
+msgid "Банковское ПО"
+msgstr "Banking software"
+
+#: templates/index-11.html:384 templates/index-11.html:405
+#: templates/index-11.html:428
+msgid "Техподдержка 24/7"
+msgstr "Technical support 24/7"
+
+#: templates/index-11.html:388 templates/index-11.html:410
+#: templates/index-11.html:434
+msgid "Попробовать"
+msgstr "Give it a try"
+
+#: templates/index-11.html:395
+msgid "БИЗНЕС"
+msgstr "BUSINESS"
+
+#: templates/index-11.html:397
+msgid "100 000 сум"
+msgstr "100,000 UZS"
+
+#: templates/index-11.html:406 templates/index-11.html:429
+msgid "ERP (Товароучетная система)"
+msgstr "ERP (Product Accounting System)"
+
+#: templates/index-11.html:417
+msgid "ПРО"
+msgstr "ABOUT"
+
+#: templates/index-11.html:419
+msgid "150 000 сум"
+msgstr "150,000 UZS"
+
+#: templates/index-11.html:430
+msgid "Маркетплейс Программа лояльности"
+msgstr "Marketplace Loyalty program"
+
+#: templates/index-11.html:451
+msgid "Мы делаем систему автоматизации"
+msgstr "We make an automation system"
+
+#: templates/index-11.html:452
+msgid "О компании Smart One Technologies"
+msgstr "About Smart One Technologies"
+
+#: templates/index-11.html:453
+msgid ""
+"Компания Smart One Technologies основана 2019 году. За короткое время "
+"компания получила опыт в области разработки программного обеспечения для "
+"автоматизации бизнес процессов любых масштабов."
+msgstr ""
+"Smart One Technologies was founded in 2019. In a short time the company "
+"gained experience in the field of software development for automation of "
+"business processes of any scale."
+
+#: templates/index-11.html:454
+msgid ""
+"Мы разработали функционал облачного сервиса, который поможет вам эффективно "
+"управлять и масштабировать свой бизнес. С помощью SmartOne ERP вы сможете "
+"контролировать финансовые потоки, управлять запасами, регулировать "
+"ценообразование и сравнивать эффективность сотрудников. SmartOne ERP "
+"ускоряет любой процесс, от управления персоналом до контроля закупок."
+msgstr ""
+"We have developed a cloud service functionality that will help you "
+"efficiently manage and scale your business. With SmartOne ERP, you can "
+"control financial flows, manage stocks, regulate pricing and compare "
+"employee performance. SmartOne ERP accelerates any process, from personnel "
+"management to procurement control."
+
+#: templates/index-11.html:455
+msgid ""
+"С помощью ПО SmartOne Mobile POS вы получаете необходимый функционал "
+"рабочего место кассира. Также имеется возможность настройки нескольких "
+"уровней доступа (кассир, старший кассир, администратор). Помимо этого, прямо "
+"на кассе можно получить отчеты по всем операциям и базовую аналитику по "
+"продажам. Приложение синхронизируется с личным кабинетом облачной системы "
+"учета SmartOne ERP."
+msgstr ""
+"With SmartOne Mobile POS software, you get the functionality you need "
+"cashier's workplace. It is also possible to set up several access levels "
+"(cashier, senior cashier, administrator). In addition, directly at the "
+"checkout you can get reports on all transactions and basic analytics on "
+"sales. The application is synchronized with the personal account of the "
+"cloud system Accounting SmartOne ERP."
+
+#: templates/index-11.html:456
+msgid ""
+"Наша миссия — упростить ведение бизнеса для предпринимателей по всей "
+"Республики и во всем мире."
+msgstr ""
+"Our mission is to make it easier for entrepreneurs around the world to do "
+"businessRepublic and all over the world."
+
+#: templates/index-11.html:459 templates/index-11.html:462
+msgid "скачать ПУБЛИЧНАЯ ОФЕРТА"
+msgstr "download PUBLIC OFFER"
+
+#: templates/index-11.html:461
+msgid ""
+"Временная ОФЕРТА для Кашкадарьинской, Cурхандарьинской и Навоийской областей"
+msgstr "Temporary OFFER for Kashkadarya, Surkhandarya and Navoi regions"
+
+#: templates/index-11.html:463
+msgid "ЕСЛИ ЕСТЬ ВОПРОСЫ? НАПИШИТЕ НАМ"
+msgstr "IF YOU HAVE QUESTIONS? WRITE US"
+
+#: templates/index-11.html:492
+msgid "Напишите нам"
+msgstr "Submit"
+
+#: templates/index-11.html:538
+msgid "ООО \"SMART ONE TECHNOLOGIES"
+msgstr "ООО \"SMART ONE TECHNOLOGIES"
+
+#: templates/index-11.html:552
+msgid "ИНН 306733959"
+msgstr "TIN 306733959"
+
+#: templates/index-11.html:553
+msgid "г.Ташкент, Мирабадский р. ул. Афросиёб 16"
+msgstr "16 Afrosiyob St., Mirabad Dist., Tashkent, Uzbekistan"
+
+#: templates/index-11.html:582
+msgid "2019 ООО \"SMART ONE TECHNOLOGIES\" Все права защищены."
+msgstr "2019 LLC 'SMART ONE TECHNOLOGIES' All rights reserved."
